@@ -1,0 +1,98 @@
+\chapter{Metodologia}
+
+Neste projeto, empregaremos uma metodologia que combina análise de conteúdo para avaliar a adesão das cidades selecionadas às Melhores Práticas para Dados na Web da W3C \cite{W3C}.
+
+\section{Análise de Conteúdo}
+
+Na análise de conteúdo, nos concentraremos nos portais de transparência de cada cidade para coletar e analisar os conjuntos de dados relacionados à educação. Esta etapa inclui o seguinte:
+
+\begin{itemize}
+    \item \textbf{Coleta de dados}: Visitaremos cada portal \cite{SP} \cite{CU} \cite{SA} \cite{MA} \cite{CG} e coletaremos os conjuntos de dados relevantes à educação disponíveis. Isso inclui dados sobre escolas, professores, alunos, desempenho dos alunos, financiamento e outros aspectos relevantes da educação.
+    \item \textbf{Avaliação da qualidade dos dados}: Avaliaremos a qualidade dos dados coletados de acordo com os critérios estabelecidos pelas Melhores Práticas para Dados na Web da W3C \cite{W3CSUMMARY}. Isso inclui a análise da completude, precisão, relevância e consistência dos dados.
+    \item \textbf{Avaliação da acessibilidade dos dados}: Avaliaremos a facilidade de acesso aos dados nos portais, a clareza das informações fornecidas e a presença de metadados que facilitam a compreensão e o uso dos dados.
+\end{itemize}
+
+No quesito da qualidade dos dados, é necessário definir qual será a medida específica adotada para cada ponto do W3C:
+
+\begin{enumerate}
+
+    \item \textbf{Fornecer metadados}: Verificado se o arquivo disponibilizado contém cabeçalho descritivo para cada coluna da planilha;
+    
+    \item \textbf{Fornecer metadados descritivos}: Verificado se é disponibilizado no arquivo ou em algum link da página visitada se há uma descrição que define especificamente o que as informações de cada coluna da planilha representa;
+
+    \item \textbf{Fornecer metadados estruturais}: Verificado se é disponibilizado no arquivo ou em algum link da página visitada a estrutura que compõem os metadados da planilha;
+
+    \item \textbf{Fornecer informações sobre a licença de dados}: Verificado se é disponibilizado um arquivo ou um link de acesso que descre a licença de dados;
+
+    \item \textbf{Fornecer informações sobre a procedência dos dados}: Verificado se é informado como foi obtido os dados informados nos arquivos avaliados;
+
+    \item \textbf{Fornecer informações de qualidade de dados}: Verificado se é informado se há dados faltantes, quantos se houver, o formato dos dados, etc;
+
+    \item \textbf{Fornecer indicador de versão}: Exibição na página de download dos arquivos, ou no próprio arquivo, a versão dos dados disponibilizados;
+
+    \item \textbf{Fornecer o histórico de versão}: Exibição de uma tabela contendo o histórico de versão. se houver indicação de versão;
+
+    \item \textbf{Usar URIs persistentes como identificadores de conjuntos de dados}: Nos dados agrupados, fornecimento de URIs que levam aos dados específicos;
+
+    \item \textbf{Usar URIs persistentes como identificadores dentro de conjunto de dados}: Nos dados específicos, exibição de URIs que levam a outros dados vinculados a este;
+
+    \item \textbf{Atribuir URIs para as versões dos conjuntos de dados e séries}: Nos indicadores de versões, atribuir URIs que levam à planilha;
+
+    \item \textbf{Usar formatos de dados padronizados legíveis por máquinas}: Os dados disponibilizados devem estar em arquivos csv, xlsx, xml ou outro formato que uma máquina consiga manipular os dados contidos;
+
+    \item \textbf{Usar representações de dados que sejam independentes de localidade}: Dados como data, moedas e palavras são entendíveis independente da localidade do usuário;
+
+    \item \textbf{Fornecer dados em formatos múltiplos}: Deve disponibilizar os dados em, ao menos, dois formatos diferentes;
+
+    \item \textbf{Reutilizar vocabulários, dando preferência aos padronizados}: Os dados que são disponibilizados, se forem repetidos, devem estar de maneira igual, não com palavras semelhantes ou formatos diferentes;
+
+    \item \textbf{Escolher o nível de formalização adequado}: Ser retirado ou colocado formato de formalização dos dados que melhor define o que está sendo representado pelas informações exibidas;
+
+    \item \textbf{Fornecer download em massa}: Permitir, através de diferentes de usuários, ou do mesmo, a extração dos dados sem bloqueio por quantidade de dados;
+
+    \item \textbf{Fornecer subjconjuntos para conjuntos de dados extensos}: Poder desagrupar dados que são construídos a partir de outros dados;
+
+    \item \textbf{Usar negociação de conteúdo para disponibilizar dados em formatos múltiplos}: Em uma API, receber os tipos de formatos aceitos pelo cliente e disponibilizar os dados em um dos formatos recebidos;
+
+    \item \textbf{Fornecer acesso em tempo real}: Ao tentar realizar o download dos dados, deve ser executado o procedimento no mesmo momento, não deve ser enviado por e-mail ou por notificação após x minutos;
+
+    \item \textbf{Fornecer dados atualizados}: Os dados são atualizados diariamente, de segunda a sexta, desconsiderando feriados;
+
+    \item \textbf{Fornecer uma explicação para os dados que não estão disponíveis}: Se houver dados faltantes, conter uma explicação dentro de uma aba de observações ou na página de download;
+
+    \item \textbf{Disponibilizar dados por meio de uma API}: Os dados podem ser obtidos atraves de uma requisição em um endpoint de uma API;
+
+    \item \textbf{Usar padrões Web como base para construção de APIs}: Utilizar um estilo arquitetônico baseado nas tecnologias da própria Web;
+
+    \item \textbf{Fornecer documentação completa para as APIs}: Fornecer informações completas na Web sobre a API. Atualizar a documentação conforme características adicionadas ou modificações realizadas;
+
+    \item  \textbf{Evitar alterações que afetem o funcionamento de sua API}: Ao realizar uma requisição para a API recentemente atualizada, os dados devem serem idênticos aos obtidos antes da atualização
+
+    \item \textbf{Preservar identificadores}: Os identificadores dos dados disṕonibilizados não devem ser faltantes no arquivo
+
+    \item \textbf{Avaliar a cobertura do conjunto de dados}: Os dados devem estar disponíveis independente da localidade do usuário;
+
+    \item \textbf{Coletar feedback de consumidores de dados}: Deve haver uma aba para avaliação ou comentário na página de download do arquivo;
+
+    \item \textbf{Compartilhar o feedback disponível}: Deve haver uma aba que disponibize as avaliações de usuários terceiros;
+
+    \item \textbf{Enriquecer dados por meio da geração de novos dados}: Dados secundários devem ser obtidos por meio de dados primários, ambos disponbilizados no arquivo;
+
+    \item \textbf{Fornecer visualizações complementares}: Fornecer visualizações complementares, como gráficos, grids, mapas, heat maps, entre outras formas de exibição;
+
+    \item \textbf{Fornecer feedback para o publicador original}: Fornecer feedback para o responsável dos dados disponibilizados;
+
+    \item \textbf{Obedecer os termos de licença}: Se houver disponibilizado os termos de licença, não infrigí-los;
+
+    \item \textbf{Citar a publicação original do conjunto de dados}: Se for um dado republicado, citar a publicação original por meio de referências.
+
+\end{enumerate}
+
+\section{Comparação e Recomendações}
+
+Após a análise de conteúdo, compararemos nossas descobertas entre as diferentes cidades. Isto nos permitirá identificar as cidades que estão liderando em termos de práticas de dados abertos e aquelas que podem precisar de melhorias.
+
+Com base em nossas descobertas, formularíamos recomendações para cada cidade, sugerindo maneiras de melhorar a transparência, a qualidade e a acessibilidade dos dados de educação.
+
+Os resultados desta análise permitirão não apenas uma avaliação aprofundada das práticas de dados abertos nos municípios selecionados, mas também fornecerão uma base para recomendações que possam promover uma maior transparência e acessibilidade dos dados de educação no futuro.
+
